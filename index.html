@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Midlands | The Future of Micro-City Living</title>
+    <style>
+        :root {
+            --primary: #2C5F2D;
+            --primary-light: #97BC62;
+            --dark: #1A1A1A;
+            --light: #F4F4F4;
+            --white: #FFFFFF;
+            --accent: #FFC107;
+            --font-main: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-main);
+            color: var(--dark);
+            background-color: var(--light);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        header {
+            background-color: var(--white);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-light);
+        }
+
+        .btn {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: var(--dark);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(26, 26, 26, 0.8), rgba(44, 95, 45, 0.8)), url('https://images.unsplash.com/photo-1518005020951-eccb494ad742?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') center/cover;
+            color: var(--white);
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        /* Grid Layouts */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 40px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: var(--white);
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            nav { display: none; } /* Simplified for mobile demo */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">THE MIDLANDS</a>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#mobility">Mobility</a>
+            <a href="#infrastructure">Infrastructure</a>
+            <a href="#governance">Governance</a>
+        </nav>
+        <a href="#apply" class="btn">Join Waitlist</a>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to The Midlands</h1>
+        <p>A private, gated, mixed-use commercial and residential micro-city[span_0](start_span)[span_0](end_span). Experience a seamlessly integrated, sustainable community powered by modern infrastructure and managed entirely through the unified Midlands App[span_1](start_span)[span_1](end_span).</p>
+        <a href="#about" class="btn" style="background-color: var(--accent); color: var(--dark);">Explore the Blueprint</a>
+    </section>
+
+    <section id="about" class="container">
+        <h2 class="section-title">A New Standard of Living</h2>
+        <div class="features-grid">
+            <div class="card">
+                <h3>Residential & Commercial Zoning</h3>
+                <p>Designed for low-impact, community-enriching businesses alongside community-owned park-model trailers and single-family homes[span_2](start_span)[span_2](end_span). The Community Office serves as the central administrative authority, managing all leasing and ground maintenance[span_3](start_span)[span_3](end_span).</p>
+            </div>
+            <div class="card">
+                <h3>In-House Logistics</h3>
+                <p>External package carriers drop off at the central Community Office mailroom[span_4](start_span)[span_4](end_span). Packages are then securely routed to individual homes and businesses by internal staff using electric cargo carts[span_5](start_span)[span_5](end_span).</p>
+            </div>
+            <div class="card">
+                <h3>Dedicated Community Responders</h3>
+                <p>The Midlands employs an in-house security and responder team trained in Basic Life Support (BLS), basic fire safety, and dispute resolution to serve as the primary community dispatch[span_6](start_span)[span_6](end_span).</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="infrastructure" style="background-color: var(--white);">
+        <div class="container">
+            <h2 class="section-title">Next-Generation Infrastructure</h2>
+            <div class="features-grid">
+                <div class="card">
+                    <h3>Solar Microgrid & Utilidors</h3>
+                    <p>Power is generated and stored via a localized solar microgrid with battery backup and a municipal grid fail-safe[span_7](start_span)[span_7](end_span). All utility lines are housed in underground "utilidor" trenches with access patches every 100 feet to allow modular scaling and repair[span_8](start_span)[span_8](end_span).</p>
+                </div>
+                <div class="card">
+                    <h3>Unified App Billing</h3>
+                    <p>Water is provided via a municipal tie-in[span_9](start_span)[span_9](end_span). All utility costs (water, power, EV charging) and base rent are bundled into unified monthly leases payable via the Midlands App[span_10](start_span)[span_10](end_span).</p>
+                </div>
+                <div class="card">
+                    <h3>Grid Protection Protocol</h3>
+                    <p>The Community Office utilizes Dynamic Load Management to throttle EV chargers during peak hours, protecting the community microgrid from overload[span_11](start_span)[span_11](end_span).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mobility" class="container">
+        <h2 class="section-title">The EV-Only Experience</h2>
+        <div class="features-grid">
+            <div class="card">
+                <h3>Pedestrian & Electric Interior</h3>
+                <p>The interior community grounds are strictly limited to pedestrians and electric mobility (e.g., golf carts, e-bikes, e-scooters, standard electric vehicles)[span_12](start_span)[span_12](end_span). Exceptions are made exclusively for emergency responders and official Midlands delivery routing[span_13](start_span)[span_13](end_span).</p>
+            </div>
+            <div class="card">
+                <h3>The Mobility Hub</h3>
+                <p>Standard combustion vehicles are strictly prohibited inside the gates[span_14](start_span)[span_14](end_span). All residents and commercial employees must park standard vehicles in their dedicated spaces at the perimeter Mobility Hub[span_15](start_span)[span_15](end_span).</p>
+            </div>
+            <div class="card">
+                <h3>Charging-as-a-Service (CaaS)</h3>
+                <p>The Community Office manages all EV charging infrastructure[span_16](start_span)[span_16](end_span). Residents may lease standardized, OCPP-compliant home chargers for a monthly fee, while shared Level 2 charging banks are available in the Mobility Hub[span_17](start_span)[span_17](end_span).</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="governance" style="background-color: var(--primary); color: var(--white);">
+        <div class="container" style="text-align: center;">
+            <h2 style="margin-bottom: 20px; font-size: 2.5rem;">Class-Based Community Governance</h2>
+            <p style="max-width: 800px; margin: 0 auto 30px; font-size: 1.1rem;">
+                The Midlands utilizes a Class-Based Voting System managed entirely through the Midlands App to handle community changes and ordinances[span_18](start_span)[span_18](end_span). Proposals must achieve a majority pass in both Class A (Residential) and Class B (Commercial) independently to take effect[span_19](start_span)[span_19](end_span). All ballots submitted through the app are stripped of names and assigned a unique hash to maintain voter privacy while publishing a transparent ledger[span_20](start_span)[span_20](end_span).
+            </p>
+            <a href="#apply" class="btn" style="background-color: var(--accent); color: var(--dark);">Review Full Bylaws</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 The Midlands Community Office. All Rights Reserved.</p>
+        <p style="font-size: 0.8rem; margin-top: 10px; opacity: 0.7;">Digital Applications and Background Checks processed securely via the Midlands App[span_21](start_span)[span_21](end_span).</p>
+    </footer>
+
+</body>
+  </html>
+  
